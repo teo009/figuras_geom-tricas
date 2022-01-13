@@ -1,4 +1,3 @@
-//Código del cuadrado
 console.group('Cuadrados')
 function perimetroCuadrado(lado) {
     return lado * 4
@@ -35,3 +34,17 @@ function areaCirculo (radio) {
     return (radio * radio) * PI
 }
 console.groupEnd()
+
+//Interactuando con HTML
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById('input-cuadrado')
+    const value = input.value
+    const perimetro = perimetroCuadrado(value)
+    alert(perimetro)
+}
+function calcularAreaCuadrado() {
+    const input = document.getElementById('input-cuadrado')
+    const value = input.value
+    const area = areaCuadrado(value)
+    alert(area)
+}
