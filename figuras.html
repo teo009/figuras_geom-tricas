@@ -12,13 +12,28 @@
         <h1>Figuras geométricas</h1>
         <p>Bienvenidos al calculador de figuras geométricas</p>
     </header>
+    <hr/>
     <section>
         <h2>Calcula el área y el perímetro de un cuadrado</h2>
         <form action="">
-            <label for="input-cuadrado">¿Cuanto mida cada lado de tu cuadrado?</label>
-            <input id="input-cuadrado" type="number"/>
+            <label for="input-cuadrado">¿Cuanto mide cada lado de tu cuadrado?</label>
+            <input placeholder="Lados del cuadrado" id="input-cuadrado" type="number" required>
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+    </section>
+    <br/>
+    <hr/>
+    <section>
+        <h2>Calcula el área y perímetro de un Triángulo</h2>
+        <form action="">
+            <label for="input-triangulo">¿Cuanto miden los lados de tu triangulo?</label>
+            <input placeholder="Lado uno del triángulo" id="input-1-triangulo" type="number"/>
+            <input placeholder="Lado dos triángulo" id="input-2-triangulo" type="number"/>
+            <input placeholder="Base del triángulo" id="input-base-triangulo" type="number"/>
+            <input placeholder="Altura del triángulo" id="input-altura-triangulo" type="number">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
         </form>
     </section>
 </body>
