@@ -2,21 +2,17 @@ console.group('Cuadrados')
 function perimetroCuadrado(lado) {
     return lado * 4
 }
-
 function areaCuadrado(lado) {
     return (lado * lado)
 } 
 console.groupEnd()
-
 console.group('Triángulos')
 function perimetroTriangulo(lado1, lado2, ladoBase) {
     return (lado1+lado2+ladoBase)
 }
-
 function areaTriangulo(base, altura) {
     return (base * altura) / 2
 }
-
 function alturaTriangulo(lado1, lado2, base) {
     if(lado1 === lado2) {
         const resultado = (lado1**2)-((base**2)/4)
@@ -26,20 +22,15 @@ function alturaTriangulo(lado1, lado2, base) {
     }
 }
 console.groupEnd()
-
 console.group('Círculos')
-
 function diametroCirculo(radio) {
     return (radio * 2)
 }
-
 const PI = Math.PI
-
 function perimetroCirculo (radio) {
     const diametro = diametroCirculo(radio)
     return (diametro * PI)
 }
-
 function areaCirculo (radio) {
     return (radio * radio) * PI
 }
@@ -74,10 +65,9 @@ function calcularAreaCuadrado() {
 }
 function calcularPerimetroTriangulo() {
     htmlData()
-    console.log(ladoTriangulo1)
-    console.log(ladoTriangulo2)
-    console.log(trianguloBase)
-    const perimetro = perimetroTriangulo(ladoTriangulo1, ladoTriangulo2, trianguloBase)
+    const perimetro = perimetroTriangulo(
+        parseFloat(ladoTriangulo1), parseFloat(ladoTriangulo2), parseFloat(trianguloBase)
+    )
     alert(perimetro)
 }
 function calcularAlturaTriangulo() {
